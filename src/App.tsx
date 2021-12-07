@@ -1,8 +1,8 @@
 import Container from '@mui/material/Container';
 import React, { useEffect, useState } from 'react';
 import { loadArticles } from './api/api';
-import { ArticleInfo } from './components/ArticleInfo';
-import { ArticleList } from './components/ArticleList';
+import { ArticleInfo } from './components/ArticleInfo/ArticleInfo';
+import { ArticleList } from './components/ArticleList/ArticleList';
 import './App.scss';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';

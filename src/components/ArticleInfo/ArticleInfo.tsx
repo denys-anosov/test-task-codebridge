@@ -13,11 +13,9 @@ export const ArticleInfo: React.FC<Props> = ({ selectedArticle }) => {
       <img
         className="image-container"
         src={`${selectedArticle.imageUrl}`}
-        alt="news article poster" /><Box
-          sx={{
-            padding: "0 75px 100px",
-          }}
-        >
+        alt="news article poster"
+      />
+      <Box sx={{padding: "0 75px 100px",}}>
         <Box
           sx={{
             padding: "35px 75px 50px",
@@ -38,6 +36,7 @@ export const ArticleInfo: React.FC<Props> = ({ selectedArticle }) => {
           >
             {selectedArticle.title}
           </Typography>
+
           <Typography
             variant="body1"
             sx={{
@@ -51,6 +50,7 @@ export const ArticleInfo: React.FC<Props> = ({ selectedArticle }) => {
             </p>
           </Typography>
         </Box>
+
         <RouterLink
           className="home-link"
           to="/"

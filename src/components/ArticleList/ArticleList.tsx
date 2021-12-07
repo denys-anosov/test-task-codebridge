@@ -3,17 +3,19 @@ import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 import Grid from '@mui/material/Grid';
 
 import React, { useState } from 'react';
-import { ArticleCard } from './ArticleCard';
+import { ArticleCard } from '../ArticleCard/ArticleCard';
 
 interface Props {
   articles: Article[],
   findArticle: (passedId: number) => void,
 }
 
+type EventType = React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>;
+
 export const ArticleList: React.FC<Props> = ({ articles, findArticle }) => {
   const [query, setQuery] = useState('');
 
-  const handleFilter = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
+  const handleFilter = (event: EventType) => {
     const { value } = event.target;
     setQuery(value);
   }
@@ -34,10 +36,17 @@ export const ArticleList: React.FC<Props> = ({ articles, findArticle }) => {
           >
             Filter by keywords
           </Typography>
+
           <TextField
             variant="outlined"
             fullWidth
-            sx={{ fontSize: '16px', color: '#575757', border: '1px solid #eaeaea', boxShadow: '0px 8px 24px rgba(0, 0, 0, 0.05)', borderRadius: '5px', mb: '40px' }}
+            sx={{
+              fontSize: '16px',
+              color: '#575757',
+              border: '1px solid #eaeaea',
+              boxShadow: '0px 8px 24px rgba(0, 0, 0, 0.05)',
+              borderRadius: '5px', mb: '40px' 
+            }}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
@@ -51,8 +60,15 @@ export const ArticleList: React.FC<Props> = ({ articles, findArticle }) => {
         </Grid>
       </Grid>
 
-      <Typography sx={{ mb: '45px', fontSize: '16px', fontWeight: '600', color: '#363636', borderBottom: '1px solid #eaeaea' }}>
-        Results: {visibleArticles && visibleArticles.length}
+      <Typography
+        sx={{
+          mb: '45px',
+          fontSize: '16px',
+          fontWeight: '600',
+          color: '#363636',
+          borderBottom: '1px solid #eaeaea' 
+        }}>
+        Results: {visibleArticles.length}
       </Typography>
 
       <Grid container spacing={3}>

@@ -39,6 +39,7 @@ export const ArticleCard: React.FC<Props> = ({ visibleArticles, findArticle }) =
               alt="news article poster"
               sx={{ mb: "8px" }}
             />
+
             <CardContent>
               <div className="flex-container">
                 <div>
@@ -55,13 +56,16 @@ export const ArticleCard: React.FC<Props> = ({ visibleArticles, findArticle }) =
                     <CalendarTodayRoundedIcon sx={{ pr: 1 }} />
                     {dateConverter(visibleArticle.publishedAt)}
                   </Typography>
+
                   <Typography variant="h4" component="div" sx={{ fontSize: '24px', mb: '20px', color: '#363636' }}>
                     {visibleArticle.title}
                   </Typography>
+
                   <Typography variant="body1" component="div" sx={{ fontSize: '16px', mb: '20px', color: '#363636' }}>
                     {getVisibleSummary(visibleArticle.summary)}
                   </Typography>
                 </div>
+
                 <div>
                   <Typography>
                     <RouterLink
