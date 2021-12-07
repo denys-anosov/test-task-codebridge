@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/test-task-codebridge/static/css/main.a59346e5.chunk.css",
-    "main.js": "/test-task-codebridge/static/js/main.793a17b6.chunk.js",
-    "main.js.map": "/test-task-codebridge/static/js/main.793a17b6.chunk.js.map",
+    "main.css": "/test-task-codebridge/static/css/main.35c57051.chunk.css",
+    "main.js": "/test-task-codebridge/static/js/main.dd921566.chunk.js",
+    "main.js.map": "/test-task-codebridge/static/js/main.dd921566.chunk.js.map",
     "runtime-main.js": "/test-task-codebridge/static/js/runtime-main.f474b94f.js",
     "runtime-main.js.map": "/test-task-codebridge/static/js/runtime-main.f474b94f.js.map",
     "static/js/2.ab04f48c.chunk.js": "/test-task-codebridge/static/js/2.ab04f48c.chunk.js",
     "static/js/2.ab04f48c.chunk.js.map": "/test-task-codebridge/static/js/2.ab04f48c.chunk.js.map",
     "index.html": "/test-task-codebridge/index.html",
-    "static/css/main.a59346e5.chunk.css.map": "/test-task-codebridge/static/css/main.a59346e5.chunk.css.map",
+    "static/css/main.35c57051.chunk.css.map": "/test-task-codebridge/static/css/main.35c57051.chunk.css.map",
     "static/js/2.ab04f48c.chunk.js.LICENSE.txt": "/test-task-codebridge/static/js/2.ab04f48c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f474b94f.js",
     "static/js/2.ab04f48c.chunk.js",
-    "static/css/main.a59346e5.chunk.css",
-    "static/js/main.793a17b6.chunk.js"
+    "static/css/main.35c57051.chunk.css",
+    "static/js/main.dd921566.chunk.js"
   ]
 }
