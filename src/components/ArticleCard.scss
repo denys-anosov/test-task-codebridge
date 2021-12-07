@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 340px;
+}
+
+.router-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #363636;
+  text-decoration: none;
+}

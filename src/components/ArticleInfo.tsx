@@ -1,9 +1,19 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
-export const ArticleInfo: React.FC<{}> = () => {
+interface Props {
+  selectedArticle: Article,
+}
+
+export const ArticleInfo: React.FC<Props> = ({ selectedArticle }) => {
   return (
     <div>
-      789
+      {selectedArticle.title}
+      <RouterLink
+        to="/"
+      >
+        Back to homepage
+      </RouterLink>
     </div>
   );
 }
