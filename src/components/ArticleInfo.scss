@@ -1,0 +1,30 @@
+.home-link {
+  display: block;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  color: #363636;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 35px 0 45px 75px;
+
+  transform: translateY(-50px);
+}
+
+.filler-text {
+  margin: 20px 0 0;
+}
+
+.image-container {
+  height: 245px;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.box {
+  background: white;
+  transform: translateY(-50px);
+}

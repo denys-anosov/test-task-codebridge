@@ -36,7 +36,7 @@ export const ArticleCard: React.FC<Props> = ({ visibleArticles, findArticle }) =
               component="img"
               height="217px"
               image={`${visibleArticle.imageUrl}`}
-              alt="article poster"
+              alt="news article poster"
               sx={{ mb: "8px" }}
             />
             <CardContent>
